@@ -1,0 +1,10 @@
+.container{
+  gap: 10px;
+}
+.parcels{
+  height: 200px;
+  width: 300px;
+  gap: 5px;
+  background-color: whitesmoke;
+  border-radius: 5px;
+}

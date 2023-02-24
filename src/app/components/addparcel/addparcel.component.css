@@ -1,0 +1,44 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+.container{
+  display: flex;
+  width: 40vw;
+  height: 30rem;
+  background-color: whitesmoke;
+  padding: 1rem;
+  border-radius: 3px;
+  margin-left: 20rem;
+}
+.left{
+  width: 50%;
+}
+.right{
+  width: 50%;
+  height: 100%;
+}
+form{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+input{
+  height: 2rem;
+  width: 100%;
+}
+#add{
+  background-color: coral;
+  border: none;
+  padding: 0.5rem;
+}
+#add:hover{
+  cursor: pointer;
+}
+input.ng-invalid.ng-touched{
+  border: solid 2px red;
+}
+.error{
+  color: red;
+}

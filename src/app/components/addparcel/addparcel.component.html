@@ -1,0 +1,33 @@
+<p>addparcel works!</p>
+<div class="container">
+  <div class="left">
+    <img src="https://png.pngtree.com/png-vector/20200418/ourmid/pngtree-thailand-parcel-box-package-png-image_2189865.jpg" alt="oops" srcset="">
+  </div>
+  <div class="right">
+
+    <form [formGroup]="reactiveForm" (ngSubmit)="onSubmit()">
+      <h2>Enter details below</h2>
+      <div>
+        <label for="">Name</label><br>
+        <input type="text" formControlName="name"><br>
+        <p class="error" *ngIf="reactiveForm.get('name')!.touched && reactiveForm.get('name')!.invalid">Please enter a name</p>
+
+      </div>
+      <div>
+        <label for="email">Email</label><br>
+        <input type="text" formControlName="email"><br>
+      <p class="error" *ngIf="reactiveForm.get('email')!.touched && reactiveForm.get('email')!.invalid">Email must have domain @travel.com'</p>
+
+      </div>
+      <div>
+      <label for="destination">Destination</label><br>
+      <input type="text" formControlName="destination"><br>
+      <p class="error" *ngIf="reactiveForm.get('destination')!.touched && reactiveForm.get('destination')!.invalid">Destination is requred</p>
+
+      </div>
+      
+      <input id="add"type="submit" value="Add Parcel">
+      
+    </form>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+<p>displayparcels works!</p>
+<div class="container">
+
+  <div class='parcels' *ngFor="let p of Parcels">
+    <p>Your product {{p.name}} is enroute to</p>
+    <p>{{p.destination}}</p>
+    <p>The delivery was made by {{p.email}}</p>
+    
+  </div>
+</div>

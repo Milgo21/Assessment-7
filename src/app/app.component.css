@@ -1,0 +1,29 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+.container{
+  height: 5rem;
+  width: 98vw;
+  display: flex;
+  justify-content: center;
+  background-color: coral;
+  gap: 5rem;
+  align-items: center;
+
+}
+.active{
+  background-color: green;
+}
+a{
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem;
+}
+button{
+  padding: 0.5rem;
+  background-color: white;
+  border-radius: 3px;
+  border: none;
+}
