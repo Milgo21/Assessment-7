@@ -9,12 +9,8 @@ import { AuthService } from './auth.service';
 import { AddparcelComponent } from './components/addparcel/addparcel.component';
 import { DisplayparcelsComponent } from './components/displayparcels/displayparcels.component';
 
-const routes: Routes = [
-  {path:'', component:AddparcelComponent},
-  {path:'Add', component:AddparcelComponent},
-  {path:'Parcels', component:DisplayparcelsComponent}
 
-];
+
 
 @NgModule({
   declarations: [
@@ -24,9 +20,9 @@ const routes: Routes = [
   ],
   imports: [
     BrowserModule,
-    // AppRoutingModule,
-    ReactiveFormsModule,
-    RouterModule.forRoot(routes)
+    AppRoutingModule,
+    ReactiveFormsModule
+    // RouterModule.forRoot(routes)
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]
