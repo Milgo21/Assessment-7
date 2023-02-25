@@ -6,8 +6,15 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class AuthService implements CanActivate {
-  canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): boolean{
-    return true
+export class AuthService  {
+  loggedIn:Boolean = false
+  login(){
+    this.loggedIn = true;
+  }
+  logout(){
+    this.loggedIn = false;
+  }
+  isAuthorized(){
+    return this.loggedIn;
   }
 }

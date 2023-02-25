@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { AuthService } from './auth.service';
 import { AddparcelComponent } from './components/addparcel/addparcel.component';
 import { DisplayparcelsComponent } from './components/displayparcels/displayparcels.component';
+import { ParcelguardService } from './parcelguard.service';
 
 
 
@@ -23,7 +24,7 @@ import { DisplayparcelsComponent } from './components/displayparcels/displayparc
     ReactiveFormsModule
     // RouterModule.forRoot(routes)
   ],
-  providers: [AuthService],
+  providers: [AuthService,ParcelguardService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
