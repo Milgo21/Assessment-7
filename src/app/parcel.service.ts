@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
+import { Parcel } from './interface';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ParcelService {
 
-  // constructor() { }
+
   parcels=[
     {"name":"Samsing",
     "email":"mimi@travel.com",
@@ -21,4 +22,12 @@ export class ParcelService {
     "destination":"Nyeri"
     }
 ]
+
+constructor(){
+
+}
+addNewParcel(addedParcel:Parcel){
+ this.parcels.push(addedParcel);
+}
+
 }

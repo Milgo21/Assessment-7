@@ -5,7 +5,8 @@ import { AddparcelComponent } from './components/addparcel/addparcel.component';
 import { DisplayparcelsComponent } from './components/displayparcels/displayparcels.component';
 
 const routes: Routes = [
-  {path:'', component:AppComponent},
+  // { path: '', redirectTo: '/home', pathMatch: 'full' },
+  // {path:'home', component:AppComponent},
   {path:'Add', component:AddparcelComponent},
   {path:'Parcels', component:DisplayparcelsComponent}
 ];
